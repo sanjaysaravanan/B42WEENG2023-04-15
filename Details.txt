@@ -1,0 +1,56 @@
+Topics:
+
+  formik:
+    external package for handling form, actions, values, validations
+
+      1. values for the form -> initialValues
+      2. Change of the values in the form --> handleChange
+      3. submit of the form -> onSubmit, handleSubmit
+      4. validationSchema using yup third party package
+      5. onBlur --> formik.handleBlur to take care of touched
+      6. use the errors along with touched object
+      7. conditionally show the errors using point no 6
+
+  api ->
+
+  fetch vs axios
+
+    fetch is inbuilt js api to handle external api calls
+    involves simple xmlhttprequest which needs the header to be specified and response to handle using json
+
+    axios is third party open source package in npm
+      simpler codes provided as module/funcs
+      which hides few operation like json of response and specification of header
+
+  axios:
+    similar to fetch and does the things in bit simpler than fetch api
+
+    axios --> a separate package to external api requests
+      which is simpler few lines of code
+      avoid the need of .json()
+
+    axios --> instance, interceptors
+  
+  monolith appliction ( https://amazon.in entire application ( Lisint Products, Cart, Account ) in on single url/instance )
+  
+  microservices ( modules are separated ( cart (https://amz-cart.in), Account (https://amz-account.in) ) )
+
+  axios instances lets us creating multiple for multiple services ( restcount, openweather )
+
+  interceptors:
+    axios lets us a way to intercept the request/response as well the response
+
+Today Task:
+  Run and see the below repository try to understand the struture of the application,
+
+  Repo: https://github.com/sanjaysaravanan/axios-formik
+
+  Under:
+    1. Root css and css variables 
+    2. layout structur, css for both sidebar, appbar
+    3. Inner Page Content Strucuture, css of addEdit page, home pages
+
+Next Session:
+  How the pages are structured
+  light mode / dark mode implmentation
+  redux
